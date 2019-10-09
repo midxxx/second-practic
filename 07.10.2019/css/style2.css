@@ -1,0 +1,197 @@
+/****************сброс стилей*****************/
+html, body, div, span, object,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i,
+dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article,
+aside, canvas, details, figcaption,
+figure, footer, header, menu, nav,
+section, summary, time, mark ,audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section, img {
+    display: block;
+}
+
+nav, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+/*******************общие стили*****************/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1600px;
+    background-color: #FFB94F;
+}
+
+header {
+    height: 974px;
+    background-color: #FF75B5;
+}
+
+.info {
+    height: 54px;
+    background-color: #1175b7;
+    width: 100%;
+    text-align: center;
+    display: table;
+}
+
+.contact {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.phone, .time, .location {
+    display: inline-block;
+    font-size: 16px;
+    color: #ffffff;
+    margin-right: 64px;
+    position: relative;
+}
+
+.location:before, .time:before, .phone:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: -20px;
+    width: 11px;
+    height: 15px;
+    background-image: url(../img/location.png);
+}
+
+.time:before, .phone:before {
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/Time.png);
+    top: 1px;
+    left: -20px;
+}
+
+.phone:before {
+    background-image: url(../img/phone.png);
+    top: 1px;
+    left: -20px;
+}
+
+.fa-air-freshener {
+    font-size: 16px;
+    width: 10px;
+    height: 10px;
+}
+
+.social {
+    display: inline-block;
+    margin-left: 230px;
+}
+
+a > i {
+    margin-left: 26px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.iactive {
+    margin-left: 0;
+}
+
+a > i:hover, .iactive {
+    color: #f6a937;
+}
+
+.logo {
+    width: 162px;
+    height: 32px;
+    background-image: url(../img/Logo.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.topnav, .topnav li {
+    display: inline-block;
+}
+
+.topnav li {
+    margin-left: 32px;
+}
+
+.topnav > li > a {
+    color: #1175b7;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.request {
+    background-color: #f6a937;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 20px 24px 20px 21px;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+nav {
+    height: 122px;
+    width: 100%;
+    display: table;
+}
+
+.containertop {
+    text-align: left;
+    height: 32px;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #ffffff;
+}
+
+.topnav, .request, .logo {
+    height: 32px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.forlogo, .fortopnav, .forrequest {
+    margin-left: 58px;
+    display: inline-block;
+}
+
+.fortopnav {
+    margin-left: 78px;
+}
+
+.forrequest {
+    line-height: 0;
+    margin-left: 90px;
+}
