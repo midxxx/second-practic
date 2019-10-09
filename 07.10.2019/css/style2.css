@@ -56,7 +56,7 @@ body {
 
 header {
     height: 974px;
-    background-color: #FF75B5;
+    background-color: #ffffff;
 }
 
 .info {
@@ -195,3 +195,141 @@ nav {
     line-height: 0;
     margin-left: 90px;
 }
+
+.slidercontainer {
+    text-align: center;
+    height: 799px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.slide1, .slide2, .slide3 {
+    width: 100%;
+    height: 799px;
+}
+
+.slide1 {
+    background-image: url(../img/Slide1.jpg);
+}
+
+.slide2 {
+    background-image: url(../img/slide2.jpg);
+}
+
+.slide3 {
+    background-image: url(../img/slide3.jpg);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0s;
+    animation-name: fade;
+    animation-duration: 0s;
+}
+
+@-webkit-keyframes fade {
+    from{
+        opacity: .4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from{
+        opacity: .4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.p1, .h1 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.p1 {
+    left: 450px;
+    top: 350px;
+    font-size: 27px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.h1 {
+    left: 340px;
+    top: 400px;
+    font-size: 54px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.today {
+    position: absolute;
+    bottom: 200px;
+    left: 550px;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #f6a937;
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 22px 40px 20px 40px;
+    line-height: 0;
+}
+
+.prev, .next {
+    width: 200px;
+    height: 100%;
+    cursor: pointer;
+    top: 0;
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+}
+
+.opacity {
+    z-index: 0;
+    left: 1px;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(120,145,217,0.5);
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(177,195,204,0.2);
+}
+
+.prev {
+    left: 1px;
+}
+
+.next {
+    right: 1px;
+}
+
+.fordot {
+    position: absolute;
+    bottom: 70px;
+    right: 620px;
+}
+
+.dot {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #767676;
+    height: 8px;
+    width: 8px;
+    margin: 0 10px 0 0;
+    display: inline-block;
+}
+
+.active2, .dot:hover {
+    background-color: #ffffff;
+}
+

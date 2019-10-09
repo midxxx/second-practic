@@ -11,7 +11,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("slide1");
+    var slides = document.querySelectorAll(".slide1, .slide2, .slide3");
     var dots = document.getElementsByClassName("dot");
     if (n > slides.length){
         slideIndex = 1;
@@ -31,4 +31,21 @@ function showSlides(n) {
 }
 
 /////////////////////////////////////////
+
+function auto() {
+    setTimeout("plusSlides(1)", 5000);
+    var stop = setTimeout("auto()", 5000);
+
+    /*
+    var slides2 = document.getElementsByClassName("slide1");
+    slides2.onmouseenter(function () {
+        clearTimeout(stop);
+    });
+    */
+
+}
+
+auto();
+
+////////////////////////////////////////
 
