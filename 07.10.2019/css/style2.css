@@ -169,7 +169,7 @@ nav {
 }
 
 .containertop {
-    text-align: left;
+    text-align: center;
     height: 32px;
     display: table-cell;
     vertical-align: middle;
@@ -183,8 +183,12 @@ nav {
 }
 
 .forlogo, .fortopnav, .forrequest {
-    margin-left: 58px;
+    margin-left: 57px;
     display: inline-block;
+}
+
+.forlogo {
+    margin-left: 0;
 }
 
 .fortopnav {
@@ -193,7 +197,7 @@ nav {
 
 .forrequest {
     line-height: 0;
-    margin-left: 90px;
+    margin-left: 80px;
 }
 
 .slidercontainer {
@@ -219,6 +223,12 @@ nav {
 
 .slide3 {
     background-image: url(../img/slide3.jpg);
+}
+
+.central {
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .fade {
@@ -253,14 +263,14 @@ nav {
 }
 
 .p1 {
-    left: 450px;
+    left: 0;
     top: 350px;
     font-size: 27px;
     font-family: 'Raleway', sans-serif;
 }
 
 .h1 {
-    left: 340px;
+    left: 0;
     top: 400px;
     font-size: 54px;
     font-family: 'Nunito', sans-serif;
@@ -269,7 +279,7 @@ nav {
 .today {
     position: absolute;
     bottom: 200px;
-    left: 550px;
+    left: 150px;
     display: inline-block;
     font-size: 18px;
     font-family: 'Josefin Sans', sans-serif;
@@ -293,7 +303,7 @@ nav {
 
 .opacity {
     z-index: 0;
-    left: 1px;
+    left: 0;
     top: 0;
     position: absolute;
     width: 100%;
@@ -316,7 +326,7 @@ nav {
 .fordot {
     position: absolute;
     bottom: 70px;
-    right: 620px;
+    right: 0;
 }
 
 .dot {
