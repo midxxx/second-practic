@@ -202,7 +202,7 @@ nav {
 
 .slidercontainer {
     text-align: center;
-    height: 799px;
+    height: 798px;
     width: 100%;
     position: relative;
     z-index: 0;
@@ -210,7 +210,7 @@ nav {
 
 .slide1, .slide2, .slide3 {
     width: 100%;
-    height: 799px;
+    height: 798px;
 }
 
 .slide1 {
@@ -326,7 +326,7 @@ nav {
 .fordot {
     position: absolute;
     bottom: 70px;
-    right: 0;
+    right: 250px;
 }
 
 .dot {
@@ -341,5 +341,102 @@ nav {
 
 .active2, .dot:hover {
     background-color: #ffffff;
+}
+
+.aboutus {
+    width: 1112px;
+    height: 748px;
+    position: relative;
+    margin: 120px auto 120px auto;
+}
+
+.imgwindow {
+    display: inline-block;
+    width: 635px;
+    height: 748px;
+    background-image: url(../img/shutterstock-1126555652.jpg);
+    background-repeat: no-repeat;
+}
+
+.abouttext {
+    border-left: 30px solid #ffffff;
+    border-bottom: 30px solid #ffffff;
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 570px;
+    height: 570px;
+    background-color: #038fd6;
+    text-align: left;
+    padding: 170px 50px 110px 55px;
+}
+
+.aboutphone {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-left: 30px solid #ffffff;
+    display: inline-block;
+    width: 478px;
+    height: 180px;
+    background-color: #f6a937;
+    padding: 55px 0 0 65px;
+}
+
+.phoneimg {
+    background-image: url(../img/phone2.png);
+    width: 59px;
+    height: 59px;
+    display: inline-block;
+}
+
+.call {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.p6 {
+    color: #ffffff;
+    font-size: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 10px;
+}
+
+.p5 {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.p4 {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 30px;
+}
+
+.p3 {
+    color: #ffffff;
+    font-size: 43px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+}
+
+.p2 {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.abouttext:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 54px;
+    width: 30px;
+    height: 3px;
+    background-color: #f6a937;
 }
 
