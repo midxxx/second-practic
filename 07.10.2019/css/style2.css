@@ -51,7 +51,7 @@ a {
 
 body {
     max-width: 1600px;
-    background-color: #FFB94F;
+    background-color: #ffffff;
 }
 
 header {
@@ -372,16 +372,19 @@ nav {
 }
 
 .aboutphone {
+    box-sizing: border-box;
     text-align: left;
     position: absolute;
     bottom: 0;
     right: 0;
-    border-left: 30px solid #ffffff;
+    margin-left: 30px;
     display: inline-block;
-    width: 478px;
-    height: 180px;
+    width: 448px;
+    height: 178px;
     background-color: #f6a937;
     padding: 55px 0 0 65px;
+    border: 1px solid transparent;
+    border-radius: 3px;
 }
 
 .phoneimg {
@@ -438,5 +441,166 @@ nav {
     width: 30px;
     height: 3px;
     background-color: #f6a937;
+}
+
+.services {
+    width: 100%;
+    height: 940px;
+    background-color: #f9f5f2;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 350px;
+    background-color: #038fd6;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 1120px;
+    margin: 0 auto;
+    height: 145px;
+}
+
+.sections1, .sections2, .sections3, .sections4 {
+    border-left: 1px solid #f7eada;
+    width: 25%;
+    height: 100%;
+    font-size: 27px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+.sections1 {
+    border-left: none;
+}
+
+.sec1 {
+    width: 63px;
+    height: 61px;
+    margin: 0 auto 20px auto;
+    background-image: url(../img/free.png);
+}
+
+.sec2 {
+    width: 61px;
+    height: 61px;
+    margin: 0 auto 20px auto;
+    background-image: url(../img/insured.png);
+}
+
+.sec3 {
+    width: 62px;
+    height: 61px;
+    margin: 0 auto 20px auto;
+    background-image: url(../img/quality.png);
+}
+
+.sec4 {
+    margin: 0 auto 20px auto;
+    width: 43px;
+    height: 61px;
+    background-image: url(../img/5years.png);
+}
+
+.why {
+    width: 1112px;
+    height: 630px;
+    position: relative;
+    margin: 120px auto 120px auto;
+    font-size: 0;
+}
+
+.imgwomen {
+    display: inline-block;
+    width: 475px;
+    height: 630px;
+    background-image: url(../img/women.jpg);
+    background-repeat: no-repeat;
+}
+
+.whyblock {
+    text-align: left;
+    display: inline-block;
+    width: 633px;
+    height: 100%;
+    vertical-align: top;
+    padding: 60px 0 0 55px;
+}
+
+.p7:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #f6a937;
+}
+
+.p7 {
+    position: relative;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    color: #038fd6;
+}
+
+.p8 {
+    margin-top: 30px;
+    font-size: 43px;
+    font-family: 'Raleway', sans-serif;
+    color: #038fd6;
+}
+
+.p9 {
+    font-size: 20px;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.p91 {
+    margin-top: 50px;
+}
+
+.fa-check-square-o {
+    color: #f6a937;
+    font-size: 16px;
+    position: absolute;
+    top: 2px;
+    left: -30px;
+}
+
+.certifield:before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 15px;
+    width: 46px;
+    height: 46px;
+    background-image: url(../img/certifield.png);
+}
+
+.certifield {
+    margin-top: 45px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    width: 268px;
+    height: 102px;
+    display: block;
+    text-align: left;
+    padding: 28px 28px 28px 78px;
+    background-color: #f6a937;
+    position: relative;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
 }
 
