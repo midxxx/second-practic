@@ -459,6 +459,90 @@ nav {
     padding-top: 135px;
 }
 
+.sliderServices {
+    margin: 50px auto 0 auto;
+    width: 1110px;
+    height: 552px;
+    position: relative;
+}
+
+.sliderServices2 {
+    margin: 0 auto;
+    width: 1130px;
+    height: 562px;
+    overflow: hidden;
+}
+
+.sliderServices2:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.lineslides {
+    width: 1460px;
+    height: 552px;
+    margin: 0 auto;
+    background-color: #f9f5f2;
+    transition: all ease 1s;
+    left: 10px;
+    position: relative;
+}
+
+.lineslides div {
+    float: left;
+    width: 350px;
+    height: 100%;
+    margin-right: 30px;
+    background-color: #ffffff;
+}
+
+.lineslides .slide12, .lineslides .slide32, .lineslides .slide22 {
+    box-shadow: 0 2px 9.9px 0.1px rgba(163, 163, 163, 0.5);
+}
+
+.lineslides > .active22, .lineslides > .active22 > div, .lineslides > .active22 > div > div {
+    background-color: #038fd6;
+    box-shadow: none;
+}
+
+.lineslides div:last-child {
+    margin-right: 0;
+}
+
+.sliderServices2 > a {
+    text-align: center;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 250px;
+    cursor: pointer;
+}
+
+.sliderServices2 > a > i {
+    font-size: 50px;
+    color: #038fd6;
+}
+
+.sliderServices2 > a:hover {
+    background-color: #038fd6;
+}
+
+.sliderServices2 > a:hover i {
+    color: #ffffff;
+}
+
+#slider2left {
+    padding-right: 3px;
+    left: -64px;
+}
+
+#slider2right {
+    padding-left: 3px;
+    right: -64px;
+}
+
 .p7 {
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
@@ -470,6 +554,71 @@ nav {
     font-family: 'Raleway', sans-serif;
     color: #414141;
     margin-top: 20px;
+}
+
+.lineslides .imgService1, .lineslides .imgService2, .lineslides .imgService3 {
+    width: 350px;
+    height: 226px;
+}
+
+.imgService1 {
+    background-image: url(../img/services1.jpg);
+}
+
+.imgService2 {
+    background-image: url(../img/services2.jpg);
+}
+
+.imgService3 {
+    background-image: url(../img/services3.jpg);
+}
+
+.lineslides .slide122, .lineslides .slide222, .lineslides .slide322 {
+    width: 100%;
+    height: 223px;
+    text-align: left;
+    padding: 20px 40px 50px 50px;
+    box-sizing: border-box;
+}
+
+.lineslides .vector3 {
+    margin: 32px 0 0 50px;
+    width: 50px;
+    height: 71px;
+    background-image: url(../img/vector3.png);
+}
+
+.lineslides .vector2 {
+    margin: 32px 0 0 50px;
+    width: 66px;
+    height: 71px;
+    background-image: url(../img/vector2.png);
+}
+
+.lineslides .vector1 {
+    margin: 32px 0 0 50px;
+    width: 74px;
+    height: 71px;
+    background-image: url(../img/vector1.png);
+}
+
+.p81 {
+    font-family: 'Raleway', sans-serif;
+    color: #8d8c8c;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.p82 {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #8d8c8c;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.active22 > div .p82, .active22 > div .p81 {
+    color: #ffffff;
 }
 
 .section {
@@ -656,6 +805,84 @@ nav {
     width: 60px;
     height: 2px;
     background-color: #f6a937;
+}
+
+.ourlinks {
+    margin: 0 auto 0 auto;
+    width: 484px;
+    height: 40px;
+    font-size: 0;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.ourlinks a {
+    color: #414141;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 10px 13px 5px 13px;
+    margin-right: 1px;
+}
+
+.ourlinks > .active33 {
+    background-color: #f6a937;
+    color: #ffffff;
+}
+
+.ourblock {
+    width: 1112px;
+    height: 490px;
+    display: inline-grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 230px 230px 230px;
+    grid-column-gap: 30px;
+    grid-row-gap: 28px;
+    float: left;
+}
+
+.ourslider {
+    margin-top: 30px;
+    width: 1112px;
+    height: 490px;
+    overflow: hidden;
+}
+
+.ourline {
+    width: 5560px;
+    height: 490px;
+    left: 0;
+    position: relative;
+}
+
+.ourblock div {
+}
+
+.ourimg1 {
+    background-image: url(../img/our1.jpg);
+}
+
+.ourimg2 {
+    background-image: url(../img/our2.jpg);
+}
+
+.ourimg3 {
+    background-image: url(../img/our3.jpg);
+}
+
+.ourimg4 {
+    background-image: url(../img/our4.jpg);
+}
+
+.ourimg5 {
+    background-image: url(../img/our5.jpg);
+}
+
+.ourimg6 {
+    background-image: url(../img/our6.jpg);
 }
 
 .delivering {

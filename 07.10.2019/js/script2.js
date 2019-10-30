@@ -159,3 +159,108 @@ function showSlides4(n) {
 
 ////////////////////////////////////////////
 
+document.getElementById("slider2right").onclick = slider2right;
+var left = 5;
+
+function slider2right() {
+    var polosa1 = document.getElementById("lineslides");
+    var active23 = document.getElementsByClassName("active22");
+    var target22left = active23[0].nextElementSibling;
+
+    left = left - 350;
+    if (left < -400){
+        left = 10;
+        target22left = active23[0].previousElementSibling;
+    }
+    polosa1.style.left = left + "px";
+
+    if (target22left.classList.contains('active22')){
+        target22left.classList.remove('active22')
+    }
+    else {
+        var openlink22 = document.querySelector('.active22');
+        if (openlink22) {
+            openlink22.classList.remove('active22')
+        }
+        target22left.classList.add('active22');
+    }
+}
+
+
+
+document.getElementById("slider2left").onclick = slider2left;
+
+function slider2left() {
+    var polosa1 = document.getElementById("lineslides");
+    var active23 = document.getElementsByClassName("active22");
+    var target22right = active23[0].previousElementSibling;
+
+    left = left + 350;
+    if (left > 400){
+        left = 10;
+        target22right = active23[0].nextElementSibling;
+    }
+    polosa1.style.left = left + "px";
+
+    if (target22right.classList.contains('active22')){
+        target22right.classList.remove('active22')
+    }
+    else {
+        var openlink22 = document.querySelector('.active22');
+        if (openlink22) {
+            openlink22.classList.remove('active22')
+        }
+        target22right.classList.add('active22');
+    }
+}
+
+////////////////////////////////////////////
+
+var ourlink3 = document.querySelectorAll('.ourlinks > a');
+
+for (var i = 0; i < ourlink3.length; i++){
+    ourlink3[i].addEventListener('click', function (event) {
+        event.preventDefault();
+        var target = event.target;
+            var openlink = document.querySelector('.active33');
+            if (openlink){
+                openlink.classList.remove('active33')
+            }
+            target.classList.add('active33');
+    });
+
+}
+
+////////////////////////////////////////////
+
+var ourlink4 = document.querySelectorAll('.ourlinks > a');
+var ourline = document.getElementsByClassName('ourline');
+var left2 = 0;
+
+ourlink4[0].addEventListener('click' , function () {
+    left2 = 0;
+    ourline[0].style.left = left2 + "px";
+});
+
+ourlink4[1].addEventListener('click' , function () {
+    left2 = -1112;
+    ourline[0].style.left = left2 + "px";
+});
+
+ourlink4[2].addEventListener('click' , function () {
+    left2 = -2224;
+    ourline[0].style.left = left2 + "px";
+});
+
+ourlink4[3].addEventListener('click' , function () {
+    left2 = -3336;
+    ourline[0].style.left = left2 + "px";
+});
+
+ourlink4[4].addEventListener('click' , function () {
+    left2 = -4448;
+    ourline[0].style.left = left2 + "px";
+});
+
+////////////////////////////////////////////
+
