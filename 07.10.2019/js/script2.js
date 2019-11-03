@@ -13,6 +13,8 @@ function showSlides(n) {
     var i;
     var slides = document.querySelectorAll(".slide1, .slide2, .slide3");
     var dots = document.getElementsByClassName("dot");
+
+
     if (n > slides.length){
         slideIndex = 1;
     }
@@ -22,30 +24,59 @@ function showSlides(n) {
     for (i = 0;i < slides.length;i++){
         slides[i].style.display = "none";
     }
+
     for (i = 0;i < dots.length;i++){
         dots[i].className = dots[i].className.replace("active2","");
     }
 
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className+=" active2";
+
 }
 
 /////////////////////////////////////////
+var slideIndex2 = 0;
+showSlides2();
 
-function auto() {
-    setTimeout("plusSlides(1)", 5000);
-    var stop = setTimeout("auto()", 5000);
+function showSlides2() {
+    var i2;
+    var slides2 = document.querySelectorAll(".slide1, .slide2, .slide3");
+    var dots2 = document.getElementsByClassName("dot");
+    var element2 = document.getElementsByClassName("opacity");
+    //var time = window.setInterval(function (){
+        //plusSlides(1);},3000);
+    
+    var time2 = getNewTimer();
 
-    /*
-    var slides2 = document.getElementsByClassName("slide1");
-    slides2.onmouseenter(function () {
-        clearTimeout(stop);
-    });
-    */
+    function getNewTimer() {
+        return window.setInterval(function (){
+            plusSlides(1);},2000);
+    }
 
-}
+    for (i2 = 0; i2 < slides2.length; i2++) {
+        slides2[i2].style.display = "none";
+    }
 
-auto();
+    slideIndex2++;
+    if (slideIndex2 > slides2.length) {
+        slideIndex2 = 1;
+    }
+
+    for (i = 0;i < dots2.length;i++){
+        dots2[i].className = dots2[i].className.replace("active2","");
+    }
+
+    slides2[slideIndex2-1].style.display = "block";
+    dots2[slideIndex2-1].className+=" active2";
+
+
+    element2[0].onmouseover = function() {
+        clearTimeout(time2);
+    };
+
+    element2[0].onmouseout = function() {
+        time2 = getNewTimer();
+    };
 
 ////////////////////////////////////////////
 
@@ -139,21 +170,21 @@ function showSlides4(n) {
     var rightdot = document.getElementById("dot3");
 
     if (leftdot.classList.contains('active4')){
-        leftdot.style.backgroundImage = "url(img/dot6.jpg)";
+        leftdot.style.backgroundImage = "url(img/dot5.jpg)";
         maindot.style.backgroundImage = "url(img/dot4.jpg)";
-        rightdot.style.backgroundImage = "url(img/dot5.jpg)";
+        rightdot.style.backgroundImage = "url(img/dot6.jpg)";
     }
     else if (maindot.classList.contains('active4')) {
-        leftdot.style.backgroundImage = "url(img/dot5.jpg)";
-        maindot.style.backgroundImage = "url(img/dot6.jpg)";
+        leftdot.style.backgroundImage = "url(img/dot6.jpg)";
+        maindot.style.backgroundImage = "url(img/dot5.jpg)";
         maindot.style.border = "1px solid #ffffff";
         rightdot.style.backgroundImage = "url(img/dot4.jpg)";
     }
     else if (rightdot.classList.contains('active4')) {
         leftdot.style.backgroundImage = "url(img/dot4.jpg)";
-        maindot.style.backgroundImage = "url(img/dot5.jpg)";
+        maindot.style.backgroundImage = "url(img/dot6.jpg)";
         maindot.style.border = "1px solid #ffffff";
-        rightdot.style.backgroundImage = "url(img/dot6.jpg)";
+        rightdot.style.backgroundImage = "url(img/dot5.jpg)";
     }
 }
 
@@ -260,7 +291,7 @@ ourlink4[3].addEventListener('click' , function () {
 ourlink4[4].addEventListener('click' , function () {
     left2 = -4448;
     ourline[0].style.left = left2 + "px";
-});
+})};
 
 ////////////////////////////////////////////
 
