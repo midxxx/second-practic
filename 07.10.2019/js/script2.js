@@ -134,63 +134,6 @@ jQuery(".btnupdiv").click(function my(event) {
 
 ////////////////////////////////////////////
 
-document.getElementById("slider2right").onclick = slider2right;
-var left = 5;
-
-function slider2right() {
-    var polosa1 = document.getElementById("lineslides");
-    var active23 = document.getElementsByClassName("active22");
-    var target22left = active23[0].nextElementSibling;
-
-    left = left - 350;
-    if (left < -400){
-        left = 10;
-        target22left = active23[0].previousElementSibling;
-    }
-    polosa1.style.left = left + "px";
-
-    if (target22left.classList.contains('active22')){
-        target22left.classList.remove('active22')
-    }
-    else {
-        var openlink22 = document.querySelector('.active22');
-        if (openlink22) {
-            openlink22.classList.remove('active22')
-        }
-        target22left.classList.add('active22');
-    }
-}
-
-
-
-document.getElementById("slider2left").onclick = slider2left;
-
-function slider2left() {
-    var polosa1 = document.getElementById("lineslides");
-    var active23 = document.getElementsByClassName("active22");
-    var target22right = active23[0].previousElementSibling;
-
-    left = left + 350;
-    if (left > 400){
-        left = 10;
-        target22right = active23[0].nextElementSibling;
-    }
-    polosa1.style.left = left + "px";
-
-    if (target22right.classList.contains('active22')){
-        target22right.classList.remove('active22')
-    }
-    else {
-        var openlink22 = document.querySelector('.active22');
-        if (openlink22) {
-            openlink22.classList.remove('active22')
-        }
-        target22right.classList.add('active22');
-    }
-}
-
-////////////////////////////////////////////
-
 var ourlink3 = document.querySelectorAll('.ourlinks > a');
 
 for (var i = 0; i < ourlink3.length; i++){
@@ -209,32 +152,46 @@ for (var i = 0; i < ourlink3.length; i++){
 ////////////////////////////////////////////
 
 var ourlink4 = document.querySelectorAll('.ourlinks > a');
-var ourline = document.getElementsByClassName('ourline');
-var left2 = 0;
+var ourblock = document.getElementsByClassName('ourblock');
 
 ourlink4[0].addEventListener('click' , function () {
-    left2 = 0;
-    ourline[0].style.left = left2 + "px";
+    var openblock = document.querySelector('.ourblockActive');
+    if (openblock) {
+        openblock.classList.remove("ourblockActive");
+    }
+    ourblock[0].classList.add('ourblockActive');
 });
 
 ourlink4[1].addEventListener('click' , function () {
-    left2 = -1112;
-    ourline[0].style.left = left2 + "px";
+    var openblock = document.querySelector('.ourblockActive');
+        if (openblock) {
+            openblock.classList.remove("ourblockActive");
+        }
+    ourblock[1].classList.add('ourblockActive');
 });
 
 ourlink4[2].addEventListener('click' , function () {
-    left2 = -2224;
-    ourline[0].style.left = left2 + "px";
+    var openblock = document.querySelector('.ourblockActive');
+    if (openblock) {
+        openblock.classList.remove("ourblockActive");
+    }
+    ourblock[2].classList.add('ourblockActive');
 });
 
 ourlink4[3].addEventListener('click' , function () {
-    left2 = -3336;
-    ourline[0].style.left = left2 + "px";
+    var openblock = document.querySelector('.ourblockActive');
+    if (openblock) {
+        openblock.classList.remove("ourblockActive");
+    }
+    ourblock[3].classList.add('ourblockActive');
 });
 
 ourlink4[4].addEventListener('click' , function () {
-    left2 = -4448;
-    ourline[0].style.left = left2 + "px";
+    var openblock = document.querySelector('.ourblockActive');
+    if (openblock) {
+        openblock.classList.remove("ourblockActive");
+    }
+    ourblock[4].classList.add('ourblockActive');
 })};
 
 ////////////////////////////////////////////
@@ -296,3 +253,183 @@ function showSlides4(n) {
 
 //////////////////////////////
 
+if(window.matchMedia('(max-width: 812px)').matches){
+
+    document.getElementById("slider2right").onclick = slider2right;
+    var left = 0;
+
+    function slider2right() {
+        var polosa1 = document.getElementById("lineslides");
+        var active23 = document.getElementsByClassName("active22");
+        var target22left = active23[0].nextElementSibling;
+
+        left = left - 330;
+        if (left < -330){
+            left = 0;
+            target22left = active23[0].previousElementSibling;
+        }
+        polosa1.style.left = left + "px";
+
+        if (target22left.classList.contains('active22')){
+            target22left.classList.remove('active22')
+        }
+        else {
+            var openlink22 = document.querySelector('.active22');
+            if (openlink22) {
+                openlink22.classList.remove('active22')
+            }
+            target22left.classList.add('active22');
+        }
+    }
+
+
+
+    document.getElementById("slider2left").onclick = slider2left;
+
+    function slider2left() {
+        var polosa1 = document.getElementById("lineslides");
+        var active23 = document.getElementsByClassName("active22");
+        var target22right = active23[0].previousElementSibling;
+
+        left = left + 330;
+        if (left > 330){
+            left = 0;
+            target22right = active23[0].nextElementSibling;
+        }
+        polosa1.style.left = left + "px";
+
+        if (target22right.classList.contains('active22')){
+            target22right.classList.remove('active22')
+        }
+        else {
+            var openlink22 = document.querySelector('.active22');
+            if (openlink22) {
+                openlink22.classList.remove('active22')
+            }
+            target22right.classList.add('active22');
+        }
+    }
+
+}
+
+if (window.matchMedia('(max-width: 479px)').matches, window.matchMedia('(max-width: 812px)').matches) {
+
+    document.getElementById("slider2right").onclick = slider2right;
+    var left = 0;
+
+    function slider2right() {
+        var polosa1 = document.getElementById("lineslides");
+        var active23 = document.getElementsByClassName("active22");
+        var target22left = active23[0].nextElementSibling;
+
+        left = left - 330;
+        if (left < -330){
+            left = 0;
+            target22left = active23[0].previousElementSibling;
+        }
+        polosa1.style.left = left + "px";
+
+        if (target22left.classList.contains('active22')){
+            target22left.classList.remove('active22')
+        }
+        else {
+            var openlink22 = document.querySelector('.active22');
+            if (openlink22) {
+                openlink22.classList.remove('active22')
+            }
+            target22left.classList.add('active22');
+        }
+    }
+
+
+
+    document.getElementById("slider2left").onclick = slider2left;
+
+    function slider2left() {
+        var polosa1 = document.getElementById("lineslides");
+        var active23 = document.getElementsByClassName("active22");
+        var target22right = active23[0].previousElementSibling;
+
+        left = left + 330;
+        if (left > 330){
+            left = 0;
+            target22right = active23[0].nextElementSibling;
+        }
+        polosa1.style.left = left + "px";
+
+        if (target22right.classList.contains('active22')){
+            target22right.classList.remove('active22')
+        }
+        else {
+            var openlink22 = document.querySelector('.active22');
+            if (openlink22) {
+                openlink22.classList.remove('active22')
+            }
+            target22right.classList.add('active22');
+        }
+    }
+
+
+}
+
+else {
+
+    document.getElementById("slider2right").onclick = slider2right;
+    var left = 0;
+
+    function slider2right() {
+        var polosa1 = document.getElementById("lineslides");
+        var active23 = document.getElementsByClassName("active22");
+        var target22left = active23[0].nextElementSibling;
+
+        left = left - 380;
+        if (left < -380){
+            left = 0;
+            target22left = active23[0].previousElementSibling;
+        }
+        polosa1.style.left = left + "px";
+
+        if (target22left.classList.contains('active22')){
+            target22left.classList.remove('active22')
+        }
+        else {
+            var openlink22 = document.querySelector('.active22');
+            if (openlink22) {
+                openlink22.classList.remove('active22')
+            }
+            target22left.classList.add('active22');
+        }
+    }
+
+
+
+    document.getElementById("slider2left").onclick = slider2left;
+
+    function slider2left() {
+        var polosa1 = document.getElementById("lineslides");
+        var active23 = document.getElementsByClassName("active22");
+        var target22right = active23[0].previousElementSibling;
+
+        left = left + 380;
+        if (left > 380){
+            left = 0;
+            target22right = active23[0].nextElementSibling;
+        }
+        polosa1.style.left = left + "px";
+
+        if (target22right.classList.contains('active22')){
+            target22right.classList.remove('active22')
+        }
+        else {
+            var openlink22 = document.querySelector('.active22');
+            if (openlink22) {
+                openlink22.classList.remove('active22')
+            }
+            target22right.classList.add('active22');
+        }
+    }
+
+
+}
+
+////////////////////////////////////////////////
