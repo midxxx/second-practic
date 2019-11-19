@@ -1103,6 +1103,7 @@ nav {
     min-height: 40px;
     font-size: 0;
     text-align: left;
+    display: none;
 }
 
 .ourlinks a {
@@ -1114,6 +1115,12 @@ nav {
     border: 1px solid transparent;
     border-radius: 3px;
     margin-right: 1px;
+    display: none;
+}
+
+.ourslider label:nth-of-type(1) {
+    margin-left: 12px;
+    padding: 11px 12px 9px 10px;
 }
 
 .ourlinks a:nth-child(1) {
@@ -1142,20 +1149,23 @@ nav {
     color: #ffffff;
 }
 
-.ourblock {
+.ourline > div {
     /*max-width: 1110px;*/
     max-width: 86.72vmax;
     min-height: 490px;
-    display: none;
     grid-template-columns: 350px 350px 350px;
     grid-template-rows: 230px 230px;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+    opacity: 0;
+    display: inline-grid;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    transition: opacity .5s;
 }
 
 .ourblockActive {
-    display: inline-grid;
-    justify-content: center;
 }
 
 .ourblock img {
@@ -1163,7 +1173,7 @@ nav {
 }
 
 .ourslider {
-    margin-top: 25px;
+    margin: 46px auto 0 auto;
     /*max-width: 1110px;*/
     max-width: 86.72vmax;
     min-height: 490px;
@@ -1173,6 +1183,7 @@ nav {
     /*width: 5560px;*/
     width: 86.74vmax;
     min-height: 750px;
+    position: relative;
 }
 
 .ourblock div {
@@ -1284,6 +1295,9 @@ nav {
     min-height: 212px;
     position: absolute;
     top: 249px;
+}
+
+.slide14, .slide24, .slide34 {
 }
 
 .slide14p1, .slide24p1, .slide34p1 {
@@ -2187,27 +2201,39 @@ footer {
         max-width: 200px;
     }
 
+    .why {
+        min-height: 532px;
+    }
+
+    .whyblock {
+        min-height: 530px;
+    }
+
+    .certi {
+        top: 81%;
+    }
+
     .our {
         margin: 0 auto 0 auto;
     }
 
     .ourslider {
-        max-width: 78.72vmax;
-        margin: 0 auto;
+        max-width: 79.72vmax;
+        margin: 46px auto 0 auto;
     }
 
     .ourline {
         min-height: 490px;
         margin: 0 auto;
-        width: 78.74vmax;
+        width: 86.74vmax;
     }
 
-    .ourblock {
+    .ourline > div {
+        max-width: 79.72vmax;
         min-height: 490px;
         grid-template-columns: 320px 320px 320px;
         grid-template-rows: 200px 200px;
         grid-column-gap: 20px;
-        grid-row-gap: 25px;
     }
 
     .ourblock img {
@@ -2342,25 +2368,27 @@ footer {
     }
 
     .our {
-        min-height: 640px;
+        min-height: 600px;
     }
 
     .ourslider {
         min-height: 360px;
-        max-width: 63.72vmax;
+        max-width: 79.72vmax;
+        margin: 20px auto 0 auto;
     }
 
     .ourline {
         min-height: 360px;
-        width: 63.74vmax;
+        width: 79.74vmax;
+        margin: 30px 0 0 0;
     }
 
-    .ourblock {
-        min-height: 360px;
+    .ourline > div {
+        max-width: 79.72vmax;
+        min-height: 370px;
         grid-template-columns: 260px 260px 260px;
-        grid-template-rows: 170px 170px;
-        grid-column-gap: 10px;
-        grid-row-gap: 15px;
+        grid-template-rows: 160px 160px;
+        grid-column-gap: 15px;
     }
 
     .ourblock img {
@@ -2497,7 +2525,7 @@ footer {
     }
 
     .contact {
-        width: 25.8vmax;
+        width: 40.8vmax;
     }
 
     .location {
@@ -2516,7 +2544,7 @@ footer {
     }
 
     .social {
-        width: 16.7vmax;
+        width: 20.7vmax;
         margin: auto;
         text-align: center;
     }
@@ -2918,25 +2946,28 @@ footer {
     }
 
     .our {
-        min-height: 600px;
+        max-width: 95.72vmax;
+        min-height: 560px;
     }
 
     .ourslider {
         min-height: 330px;
-        max-width: 58.72vmax;
+        max-width: 92.72vmax;
+        margin: 20px auto 0 auto;
     }
 
     .ourline {
-        min-height: 330px;
-        width: 58.74vmax;
+        min-height: 335px;
+        width: 92.74vmax;
+        margin: 30px 0 0 0;
     }
 
-    .ourblock {
-        min-height: 330px;
+    .ourline > div {
+        max-width: 91.72vmax;
+        min-height: 335px;
         grid-template-columns: 240px 240px 240px;
-        grid-template-rows: 150px 150px;
+        grid-template-rows: 140px 140px;
         grid-column-gap: 10px;
-        grid-row-gap: 15px;
     }
 
     .ourblock img {
@@ -3163,13 +3194,23 @@ footer {
 
     .ourslider {
         min-height: 330px;
-        width: 35.27vmax;
-        margin: 0 auto;
+        width: 59.27vmax;
+        margin: 20px auto 0 auto;
     }
 
     .ourline {
         min-height: 330px;
         width: 35.27vmax;
+        margin: 30px 0 0 0;
+    }
+
+    .ourline > div {
+        max-width: 34.72vmax;
+        min-height: 335px;
+        grid-template-columns: 220px 220px;
+        grid-template-rows: 120px;
+        grid-column-gap: 5px;
+        justify-content: normal;
     }
 
     .ourblock img {
@@ -3183,6 +3224,10 @@ footer {
         grid-column-gap: 5px;
         grid-row-gap: 15px;
         width: 35.27vmax;
+    }
+
+    .ourslider label:nth-of-type(1) {
+        margin-left: 0;
     }
 
     .ourblock div:nth-child(5){
@@ -3350,7 +3395,7 @@ footer {
 
     .our {
         margin-top: 40px;
-        min-height: 410px;
+        min-height: 380px;
     }
 
     .p13 {
@@ -3368,23 +3413,29 @@ footer {
 
     .ourslider {
         min-height: 230px;
-        width: 28.27vmax;
+        width: 46.7vmax;
+        margin: 15px auto 0 auto;
     }
 
     .ourline {
         min-height: 230px;
-        width: 28.27vmax;
+        width: 46.7vmax;
+        margin: 20px 0 0 0;
     }
 
-    .ourblock {
-        min-height: 230px;
+    .ourline > div {
+        max-width: 40.72vmax;
         grid-template-columns: 170px 170px;
-        grid-template-rows: 100px;
-        width: 28.27vmax;
+        grid-template-rows: 85px;
+        grid-column-gap: 3px;
     }
 
     .ourblock img {
         max-width: 170px;
+    }
+
+    .ourslider label:nth-of-type(1) {
+        margin-left: 0;
     }
 
     .blog {
@@ -3511,4 +3562,173 @@ footer {
     .btnupdiv {
         padding-top: 4px;
     }
+}
+
+/****************Табы на CSS*****************/
+
+.tabs {
+    background: #0a001f;
+}
+
+#check {
+    display: none;
+}
+
+.label1 {
+    display: block;
+    width: 200px;
+    line-height: 50px;
+    background: #bbbbbb;
+    text-align: center;
+    cursor: pointer;
+}
+
+.wow {
+    width: 200px;
+    height: 100px;
+    margin: 5px 0;
+    background: #444444;
+}
+
+#check:checked ~ div.wow {
+    background-color: #3ad900;
+}
+
+.wow2 {
+    width: 100%;
+    height: 350px;
+    background: #0a001f;
+    margin: 0 auto;
+}
+
+.tabbed {
+    width: 700px;
+    font: 2em 'PT Sans', sans-serif;
+    color: #eeeeee;
+    margin: 50px auto;
+}
+
+.tabbed > input {
+    display: none;
+}
+
+.tabbed > label {
+    display: block;
+    float: left;
+    padding: 12px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.tabbed > label:hover,
+.tabbed > input:checked + label {
+    background: #4ec6de;
+}
+
+.tabs2 {
+    clear: both;
+    perspective: 600px;
+}
+
+.tabs2 > div {
+    width: 700px;
+    position: absolute;
+    border: 2px solid #4ec6de;
+    padding: 10px 30px 40px;
+    line-height: 1.4em;
+    opacity: 0;
+    transform: rotateX(20deg);
+    transform-origin: top center;
+    transition: opacity .3s, transform 1s;
+}
+
+#tab-nav-1:checked ~ .tabs2 > div:nth-of-type(1),
+#tab-nav-2:checked ~ .tabs2 > div:nth-of-type(2),
+#tab-nav-3:checked ~ .tabs2 > div:nth-of-type(3),
+#tab-nav-4:checked ~ .tabs2 > div:nth-of-type(4) {
+    transform: rotateX(0deg);
+    opacity: 1;
+}
+
+::selection {
+    background-color: #f6a937;
+}
+
+@media screen and (max-width: 812px){
+    .tabbed {width: 400px;}
+    .tabbed > label {display: none;}
+    .tabs2 > div {
+        width: 400px;
+        border: none;
+        padding: 0;
+        opacity: 1;
+        position: relative;
+        transform: none;
+        margin-bottom: 60px;
+    }
+    .tabs2 > div h3 {
+        border-bottom: 2px solid #4ec6de;
+        padding-bottom: .5em;
+    }
+}
+
+/****************Табы на CSS2*****************/
+
+#tab3-nav-1:checked ~ .ourline > div:nth-of-type(1),
+#tab3-nav-2:checked ~ .ourline > div:nth-of-type(2),
+#tab3-nav-3:checked ~ .ourline > div:nth-of-type(3),
+#tab3-nav-4:checked ~ .ourline > div:nth-of-type(4),
+#tab3-nav-5:checked ~ .ourline > div:nth-of-type(5) {
+    opacity: 1;
+}
+
+.ourslider {
+    font-size: 0;
+}
+
+.ourslider > input {
+    display: none;
+}
+
+.ourslider > label {
+    color: #414141;
+    font-size: 1.8rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    margin-right: 1px;
+    cursor: pointer;
+}
+
+.ourslider > label:hover,
+.ourslider > input:checked + label {
+    background-color: #f6a937;
+    color: #ffffff;
+}
+
+.ourslider label:nth-of-type(1) {
+    padding: 11px 12px 9px 10px;
+}
+
+.ourslider label:nth-of-type(2) {
+    padding: 11px 9px 9px 14px;
+}
+
+.ourslider label:nth-of-type(3) {
+    padding: 11px 13px 9px 17px;
+}
+
+.ourslider label:nth-of-type(4) {
+    padding: 11px 9px 9px 13px;
+}
+
+.ourslider label:nth-of-type(5) {
+    padding: 11px 9px 9px 17px;
+}
+
+.ourline {
+    margin: 47px 0 0 0;
 }

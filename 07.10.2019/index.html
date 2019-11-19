@@ -5,11 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
     <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
     <title>CliningCompany</title>
 </head>
 <body>
@@ -231,15 +234,22 @@
             <p class="p13">Our company is latest at cleaning servicing company We can clean <br>
                 your space including home.</p>
             <div class="ourlinks">
-                <a class="active33" href="">All Project</a>
-                <a href="">House</a>
-                <a href="">Office</a>
-                <a href="">Garden</a>
-                <a href="">Apartment</a>
+                                    <a class="active33" href="">All Project</a>
+                                    <a href="">House</a>
+                                    <a href="">Office</a>
+                                    <a href="">Garden</a>
+                                    <a href="">Apartment</a>
             </div>
+
             <div class="ourslider">
+                <input type="radio" name="tabs3" id="tab3-nav-1" checked><label for="tab3-nav-1">All Project</label>
+                <input type="radio" name="tabs3" id="tab3-nav-2"><label for="tab3-nav-2">House</label>
+                <input type="radio" name="tabs3" id="tab3-nav-3"><label for="tab3-nav-3">Office</label>
+                <input type="radio" name="tabs3" id="tab3-nav-4"><label for="tab3-nav-4">Garden</label>
+                <input type="radio" name="tabs3" id="tab3-nav-5"><label for="tab3-nav-5">Apartment</label>
+
                 <div class="ourline">
-                        <div class="ourblock ourblockActive">
+                        <div class="ourblock">
                             <div class="ourimg1">
                                 <img src="img/our1.jpg" alt="">
                             </div>
@@ -340,6 +350,7 @@
                             </div>
                         </div>
                 </div>
+
             </div>
         </div>
         <div class="delivering">
@@ -567,7 +578,50 @@
         <div class="btnupdiv" href="#" onscroll="scroll_foo()"><i id="up" class="fa fa-chevron-up" aria-hidden="true"></i></div>
     </footer>
 
+    <!--
+    <div class="tabs">
+        <div class="tab1">
+            <input type="checkbox" name="" id="check">
+            <label class="label1" for="check">My checkbox</label>
+            <div class="wow"></div>
+        </div>
+        <div class="wow2">
+            <div class="tabbed">
+                <input type="radio" name="tabs" id="tab-nav-1" checked><label for="tab-nav-1">HTML</label>
+                <input type="radio" name="tabs" id="tab-nav-2"><label for="tab-nav-2">CSS</label>
+                <input type="radio" name="tabs" id="tab-nav-3"><label for="tab-nav-3">JavaScript</label>
+                <input type="radio" name="tabs" id="tab-nav-4"><label for="tab-nav-4">Output</label>
+                <div class="tabs2">
+                    <div><h3>HTML</h3>Мы смотрим вперед и активно развиваемся,
+                        поэтому всегда можем предложить много разной и интересной работы.
+                        Ищем в команду сотрудника, который будет любить дело,
+                        как и мы, и не оставаться безразличным к результату работы.
+                    </div>
+                    <div><h3>CSS</h3>Курсы подготовки к ЕГЭ и ОГЭ «Годограф» — это динамично развивающаяся компания,
+                        с каждым годом увеличивающая число своих клиентов и сотрудников.
+                        И сейчас нам требуется «свежая кровь» в виде специалиста по работе с клиентами.
+                        Если ты можешь найти подход к кому угодно, относишься к людям с уважением,
+                        а к работе с усердием и ответственностью, адекватно реагируешь на нестандартные
+                        ситуации и блещешь самоорганизацией, то добро пожаловать.
+                    </div>
+                    <div><h3>JavaScript</h3>«Годограф» — федеральная сеть учебных центров с филиалами
+                        более чем в 70 городах России, которая помогает старшеклассникам сдавать экзамены
+                        ОГЭ и ЕГЭ на высокие баллы и поступать в ведущие вузы. Мы стремимся развиваться,
+                        а с Вашей помощью мы сможем сделать это еще быстрее.
+                    </div>
+                    <div><h3>Output</h3>Если наша вакансия Вас заинтересовала, мы готовы рассмотреть Ваше резюме.
+                        Надеемся, что Вы действительно ознакомились с текстом вакансии, и, если это так,
+                        просим Вас написать в сопроводительном письме фразу:
+                        «Я хочу работать в Годографе! от VDHL.»
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </body>
 </html>
