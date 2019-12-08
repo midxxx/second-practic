@@ -3732,3 +3732,227 @@ footer {
 .ourline {
     margin: 47px 0 0 0;
 }
+
+/****************SVG Спрайты*****************/
+
+.iconFacebook {
+    display: block;
+    width: 140px;
+    height: 140px;
+    stroke: #1DC116;
+    fill: red;
+}
+
+.iconFacebook:hover {
+    fill: #000000;
+}
+
+.iconTwitter {
+    display: block;
+    width: 240px;
+    height: 240px;
+    stroke: #000000;
+    fill: #f1a80a;
+}
+
+.iconTwitter:hover {
+    fill: #FF75B5;
+}
+
+.alien-svg-sposob {
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/alien.png);
+    -webkit-background-size: 100px 100px;
+    background-size: 100px 100px;
+}
+
+html.svg .alien-svg-sposob {
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/alien.svg);
+    -webkit-background-size: 100px 100px;
+    background-size: 100px 100px;
+}
+
+.alien-css-sposob {
+    background-image: url(../img/alien@2x.png);
+    -webkit-background-size: 200px 200px;
+    background-size: 200px 200px;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+.alien-css2-sposob {
+    background-image: url(../img/alien.png);
+    -webkit-background-size: 250px 250px;
+    background-size: 250px 250px;
+    width: 250px;
+    height: 250px;
+}
+
+@media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi)  {
+    .alien-css2-sposob  {
+        background-image: url(../img/alien@2x.png);
+    }
+}
+
+/*
+.logo  {
+    background-image: url(logo.png);
+    background-size: 250px 100px;
+    height: 250px;
+    width: 100px;
+}
+
+@media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .logo {
+        background-image: url(logo@2x.png);
+    }
+}
+*/
+
+.retina {
+    font-size: 20px;
+}
+
+/****************Vue Framework*****************/
+
+#app {
+    padding: 20px;
+}
+
+#app h5, #app p, #app ul li {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+#app a {
+    font-size: 30px;
+}
+
+#app input {
+    font-size: 20px;
+}
+
+.circle {
+    border: 1px solid #000000;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+#app button {
+    width: 100px;
+    height: 20px;
+}
+
+/****************Vue Framework*****************/
+html {
+    font-size: 10px;
+}
+
+html, body {
+    margin: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.nav4 {
+    background: #e1c76e;
+}
+
+.nav4 .wrapper {
+    position: relative;
+}
+
+.wrapper, .menu > li > a {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.menuToggle {
+    display: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.clearfix {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#menuCheck {
+    display: none;
+}
+
+@media  screen and (max-width: 560px){
+
+
+.menu {
+    display: none;
+    position: absolute;
+    background: #e1c76e;
+}
+
+    .menuToggle {
+        display: inline-block;
+    }
+
+.menu li {
+    float: none;
+}
+
+#menuCheck:checked +.menu {
+ display: block;
+}
+
+}

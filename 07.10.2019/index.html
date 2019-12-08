@@ -578,7 +578,37 @@
         <div class="btnupdiv" href="#" onscroll="scroll_foo()"><i id="up" class="fa fa-chevron-up" aria-hidden="true"></i></div>
     </footer>
 
-    <!--
+
+    <svg class="iconFacebook">
+        <use xlink:href="sprite.svg#facebook"></use>
+    </svg>
+
+    <svg class="iconTwitter">
+        <use xlink:href="sprite.svg#twitter"></use>
+    </svg>
+
+    <div class="alien-svg-sposob"></div>
+
+    <img class="alien-html-sposob" src="img/alien@2x.png" alt="" width="150px" height="150px">
+
+    <div class="alien-css-sposob"></div>
+
+    <img class="alien-js-jq-sposob" src="img/alien@2x.png" alt="">
+
+    <div class="alien-css2-sposob"></div>
+
+    <img class="alien-js-sposob" src="img/alien.png" alt="">
+    <p class="retina">На основе этого метода создан плагин Retina.js,
+        который умеет делать все то же самое, но с дополнительными возможностями,
+        такими как пропуск внешних изображений и пропуск внутренних, не имеющих retina-копий.</p>
+
+    <picture>
+        <source srcset="img/shutterstock-1126555652.webp 1x" media="(max-width: 600px)">
+        <source srcset="img/shutterstock-1126555652.jpg 1x" media="(max-width: 600px)">
+        <source type="image/webp" srcset="img/alien.webp 1x, img/alien@2x.webp 2x, img/alien@3x.webp 3x">
+        <img src="img/alien.png" srcset="img/alien@2x.png 2x, img/alien@3x.png 3x" alt="">
+    </picture>
+
     <div class="tabs">
         <div class="tab1">
             <input type="checkbox" name="" id="check">
@@ -617,11 +647,229 @@
                 </div>
             </div>
         </div>
+        <div id="app">
+            <input type="text" v-on:input="changeName">
+        <h5>Hello {{ name }}</h5>
+            <h5>If statement: {{ isOk ? 'I am OK' : 'I am not OK' }}</h5>
+            <h5><a v-bind:href="url">Goggle</a></h5>
+            <h5 v-html="link"></h5>
+            <h5>Счетчик = {{ counter }}</h5>
+            <button v-on:click="riseCounter">Увеличить</button>
+            <h5 v-on:mouseover="onHover">Счетчик2 = {{ counter2 }}</h5>
+            <button v-on:click="counter2++">Увеличить2</button>
+
+            <h5>{{ title }} = {{ counter3 }}</h5>
+            <button v-on:click="riseCounter3(5,'Изменено на 5', $event)">Увеличить на 5</button>
+            <button v-on:click="riseCounter3(10,'Изменено на 10', $event)">Увеличить на 10</button>
+
+            <h5>
+                <a href="http://ya.ru" target="_blank" v-on:click.prevent="">YANDEX</a>
+            </h5>
+            <h5 v-on:mousemove="mouse">
+                X: {{ x }} / Y: {{ y }}
+                <span v-on:mousemove.stop="">НЕ МЕНЯТЬ</span>
+            </h5>
+
+            <input type="text" v-on:keyup.enter.space="alertValue">
+            <h5>{{string.split('').reverse('').join('')}}</h5>
+
+            <input type="text" v-model.lazy="inputValue">
+            <h5>{{inputValue}}</h5>
+            <div class="circle" :class="getCSSClasses"></div>
+            <div class="circle" @click="isActive = !isActive" :class="{'red':isActive, 'green':!isActive}"></div>
+            <div class="circle" :class="[color,{'blue':isActive}]"></div>
+            <input type="text" v-model="color">
+
+            <a :href="url" @click = "reed">Google2</a>
+
+            <div class="circle" :style="circleClasses"></div>
+            <div class="circle" :style="[circleClasses, {'width': height + 'px'}]"></div>
+
+            <input type="text" v-model="color2">
+            <input type="text" v-model="height">
+
+            <h5 v-if="isVisible">Lorem ipsus</h5>
+            <h5 v-else>Ipsus Lorem 2</h5>
+            <hr>
+            <button @click="isVisible = !isVisible"></button>
+
+            <h5 v-if="type === 'a'">A</h5>
+            <h5 v-else-if="type === 'b'">B</h5>
+            <h5 v-else-if="type === 'c'">C</h5>
+            <h5 v-else>not match</h5>
+            <hr>
+            <input type="text" v-model="type">
+
+            <template v-if="isVisible">
+                <h5>I am title</h5>
+                <p>I am Lorem lorem</p>
+            </template>
+            <template v-else>
+                <h5>am @</h5>
+                <p>am 1222</p>
+            </template>
+
+            <hr>
+
+            <ul>
+                <li v-for="person in people">{{person}}</li>
+            </ul>
+
+            <hr>
+
+            <ul>
+                <li v-for="(person, index) of people2">{{index+1}} ) {{person.name}} - {{person.age}}</li>
+            </ul>
+
+            <hr>
+
+            <ul>
+                <li v-for="(person,key,index) in people3"><em>{{index+1}}</em> - <b>{{key}}</b> - {{person}}</li>
+            </ul>
+
+            <hr>
+            <h5>Counter {{cou}} / {{cou2}}</h5>
+            <h5>{{compResult}}</h5>
+            <h5></h5>
+
+            <button @click="add">Add</button>
+            <button @click="sub">Sub</button>
+            <button @click="add2">Add2</button>
+
+
+        </div>
+        
+        <nav class="nav4">
+            <div class="wrapper">
+                <label class="menuToggle" for="menuCheck">Меню</label>
+                <input type="checkbox" id="menuCheck">
+                <ul class="menu clearfix">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Продукты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <div class="wrapper">
+                <p>Другой контент</p>
+            </div>
+        </section>
     </div>
-    -->
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script2.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+        new Vue ({
+            el: '#app',
+            data: {
+                name:'Vue!!!!',
+                isOk: false,
+                string: 'My name is Vlad',
+                url: 'http://google.com',
+                link: '<a href="http://ya.ru">Yandex</a>',
+                counter: 0,
+                counter2: 0,
+                counter3: 0,
+                title: 'Счётчик',
+                x: 0,
+                y: 0,
+                inputValue: 'Initial value',
+                color: 'green',
+                isActive: false,
+                color2: 'yellow',
+                height: 100,
+                isVisible: true,
+                type: 'a',
+                people: [
+                    'Vlad',
+                    'Max',
+                    'Elena'
+                ],
+                people2: [
+                    {name:'Vlad',age:20},
+                    {name:'Max',age:25},
+                    {name:'Elena',age:30}
+                    ],
+                people3:{
+                    name:'max',
+                    age:50,
+                    job:'Frontend'
+                },
+                cou: 0,
+                cou2: 0
+            },
+            computed:{
+              getCSSClasses: function () {
+                  return {
+                      'red': this.isActive,
+                      'blue':!this.isActive
+                  }
+              },
+                circleClasses: function () {
+                    return {
+                        'background': this.color2,
+                        'height': this.height + 'px'
+                    }
+                },
+                compResult: function () {
+                    return this.cou > 3 ? 'More that 3' : 'Less than 3'
+                }
+            },
+            methods:{
+                changeName: function (event) {
+                    this.name = event.target.value
+                },
+                riseCounter: function () {
+                    this.counter++
+                },
+                onHover: function (event) {
+                    event.target.style.color='red'
+                },
+                riseCounter3: function (num, str, event) {
+                    this.counter3 += num
+                    this.title = str
+
+                    if (num === 5){
+                        event.target.style.color='blue'
+                    } else if(num === 10) {
+                        event.target.style.color='red'
+                    }
+                },
+                mouse: function (event) {
+                    this.x = event.clientX
+                    this.y = event.clientY
+                },
+                alertValue: function (event) {
+                    alert(event.target.value)
+                },
+                reed: function (event) {
+                    event.target.style.color='red'
+                },
+                add: function () {
+                    this.cou++
+                },
+                sub: function () {
+                    this.cou--
+                },
+                add2: function () {
+                    this.cou2++
+                }
+            },
+            watch:{
+                cou2: function (val) {
+                    alert(val)
+                }
+            }
+        });
+    </script>
+
 </body>
 </html>

@@ -432,4 +432,49 @@ else {
 
 }
 
+
+
 ////////////////////////////////////////////////
+
+$(window).load(function () {
+    var alien1 = $(".alien-js-jq-sposob");
+    alien1.each(function (i) {
+        $(this).width($(this).width / 2);
+    });
+});
+
+$(window).load(function() {
+    var images = $('img');
+    images.each(function(i) {
+        $(this).width($(this).width() / 2);
+    });
+});
+
+////////////////////////////////////////////////
+
+$(document).ready(function(){
+    if ('devicePixelRatio' in window && window.devicePixelRatio > 1) {
+        var lowresImages = $('img.replace-2x ');
+
+        images.each(function(i) {
+            var lowres = $(this).attr('src');
+            var highres = lowres.replace(".", "@2x.");
+            $(this).attr('src', highres);
+        });
+    }
+});
+
+////////////////////////////////////////////////
+
+$(function () {
+    $('.menuToggle').on('click',function () {
+        $('.menu').slideToggle(300,function () {
+            if ($(this).css('display')=== 'none') {
+                $(this).removeAttr('style');
+            }
+        });
+    });
+});
+
+////////////////////////////////////////////////
+
